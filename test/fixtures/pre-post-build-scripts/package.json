@@ -6,14 +6,11 @@
     "type" : "git",
     "url" : "http://github.com/example/example.git"
   },
-  "dependencies": {
-    "thisdoesnotexist": "*"
-  },
   "engines": {
-    "node": "0.10.x",
-    "npm": "1.4.28"
+    "node": "~0.10.0"
   },
-  "scripts": {
-    "start": "node server.js"
+  "scripts" : {
+    "heroku-prebuild" : "echo heroku-prebuild hook message",
+    "heroku-postbuild" : "echo heroku-postbuild hook message"
   }
 }
